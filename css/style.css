@@ -1,34 +1,94 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
+   /* box-sizing: border-box; */
     font-family: 'Slabo 27px', serif;
-    color: #221f1f;
+    padding: 0;
+    margin: 0;
+    background-color: white;
 }
+
 header {
-    height: 200px;
-    width: 100%;
-    border:2px solid #222222 ;
-}
-
-.menu {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px 10px;   
+    background-color: #fffdf9;
+    border-bottom: 2px solid #ffe3ed;
 }
-a {
-    color: #221f1f;
+
+img {
+    background-color: #fffdf9;
+}
+
+.logo {
+    cursor: pointer;
+    order: 2;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+nav li {background-color: #fffdf9;}
+
+
+.nav-links li a {
+    transition: all 0.3 ease 1s;
+    color: #8ac6d1;
     text-decoration: none;
+    font-size: 25px;
 }
 
-.menu-li-logo {
-    margin-right: auto;
-    margin-left: auto;
+.nav-links li a:hover {
+    transition: all 0.3 ease 1s;
+    color: grey;
 }
 
-#menu-logo {
-    height: 100%;
-    width: 40%;
+.navbar-left {
+    order: 1;
 }
- 
+
+.navbar-right {
+    order: 3;
+}
+
+.banner {
+    background: url('../assets/images/banner.jpg') top left/cover no-repeat;
+    height: 85vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.banner h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    letter-spacing: 5px;
+    color: #fffdf9;
+    background-color: transparent;
+  }
+
+.banner h5 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    letter-spacing: 3px;
+    color: #fffdf9;
+    background-color: transparent;
+}
+
